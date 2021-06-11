@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner{
+    background-image: url(../Images/banner.png);
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.banner h1{
+    color: white;
+    font-size: 65px;
+    
+}
+
+.arrow-icon{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, 0);
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes updown{
+    0%{
+        top: 80%;
+    }
+    100%{
+        top: 85%;
+    }
+}
+
+.who-we-are{
+    padding: 80px 0;
+
+}
+
+.who-we-are h1{
+    color: #28377e;
+    font-family: 40px;
+
+
+}
+
+
+.who-we-are p{
+    color: #b0b0b1
+
+
+}
+
+.heading{
+
+
+
+}
+
+.heading span{
+    display: inline-block;
+    width: 0px;
+    height: 5px;
+    background: #f05428;
+    transition: .5s all ease-in-out;
+}
+
+.text-right{
+    text-align: end;
+}
+
+.who-we-are:hover .heading span{
+    width: 50px;
+}
+
+.what-we-do{
+    background-color: #f7f8f8;
+    padding: 70px 0;
+    background-image: url(../Images/background-2.png);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: right bottom;
+
+}
+
+.heading-two span{
+    display: inline-block;
+    width: 0px;
+    height: 5px;
+    background: #f05428;
+    transition: .5s all ease-in-out;
+
+}
+
+.what-we-do:hover .heading-two span{
+    width: 50px;
+}
+
+.heading-two h1{
+    color: #28377e;
+    font-family: 40px;
+
+}
+
+.image{
+    position: relative;
+}
+
+
+.image::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: -moz-linear-gradient(top,  rgba(59,103,158,0) 0%, rgba(32,124,202,0.48) 48%, rgba(43,136,217,0.5) 50%, rgba(32,124,202,0.51) 51%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(59,103,158,0) 0%,rgba(32,124,202,0.48) 48%,rgba(43,136,217,0.5) 50%,rgba(32,124,202,0.51) 51%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(59,103,158,0) 0%,rgba(32,124,202,0.48) 48%,rgba(43,136,217,0.5) 50%,rgba(32,124,202,0.51) 51%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003b679e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+    transition: .4s all ease-in-out;
+}
+
+
+.image:hover::before{
+    height: 100%;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-transform: uppercase;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.title h1{
+
+}
+
+.image:hover .title{
+    opacity: 1;
+    top: 45%;
+}
+
+.arrow{
+    position: absolute;
+    top: 75%;
+    color: white;
+    left: 45%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.image:hover .arrow{
+    opacity: 1;
+    left: 50%;
+}
+
+.attorneys{
+    background-image: url(../Images/bg-3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    }
+
+.main{
+    padding-top: 60px;
+    }
+    
+.attorneys:hover span{
+        width: 80px;
+        
+    }
+
+.text{
+
+    }
+    
+.text span{
+        
+        display: inline-block;   
+        width: 0px; 
+        height: 5px;
+        background: #f1602b;
+        transition: 0.6s all ease-in-out;
+        }
+
+
+.text h1{
+        
+    color: #fff; 
+    font-weight: 700;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    }
+    
+.text p{
+
+    color: gray;
+    }
+    
+.text .see-btn{
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    
+.text .see-btn a{
+            
+        color: #f47b3b;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        }
+    
+
+        
+.lawyer{
+       position: relative;
+       margin-bottom: 30px;
+    }
+
+.lawyer img{
+    width: 100%;
+    }
+    
+    
+.lawyer::before{
+        content: "";
+        background: -moz-linear-gradient(top,  rgba(40,55,126,0) 0%, rgba(40,55,126,0) 27%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 0%,rgba(40,55,126,0) 27%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(40,55,126,0) 27%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+        
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 0%;
+         position: absolute;
+         opacity: 0.6;
+         transition: 0.6s all ease-in-out;
+    }
+    
+    
+.lawyer:hover::before{
+    height: 100%;
+    }
+    
+    
+.lawyer h1{
+        position: absolute;
+        color: #fff;
+        top: 70%;
+        left: 3%;
+        font-weight: 700;
+        opacity: 0;
+        transition: 0.6s all ease-in-out;
+    }
+
+.lawyer:hover h1{
+        left: 7%;
+        opacity: 1;
+    }
+  
+.top-column{
+    margin-bottom: 5%;
+}
+
+.language{
+
+    padding: 80px 0;
+    }
+
+.language-text{
+
+}
+
+.language-text span{
+    display: inline-block;
+    width: 0px;
+    height: 5px;
+    background: #f05428;
+    transition: .5s all ease-in-out;
+
+}
+
+.language:hover span{
+        width: 80px;
+    }
+
+.language-particulars{
+    
+    }
+
+.language-particulars h1{
+    
+    color: #28377e;
+    font-size: 30px;
+    font-weight: 700;
+    }
+    
+.language-particulars p{
+    
+    padding: 5px 0;
+    color: gray;
+    }
+
+.language-particulars .read-btn{
+    
+    padding: 0;
+    margin: 0;
+    position: relative;
+    }
+    
+.language-particulars .read-btn a{
+        
+    color: #f47b3b;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    }
